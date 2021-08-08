@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <form action="register.php"method="get">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <input type="hidden"name="id" value="45">
+            <label for="">User Name</label> <br>
+            <input type="text" name="name" id="name" maxlength="20"minlength="5" value="Mya"readonly="readonly"> <br>
+            <label for="address">Address</label> <br>
+            <textarea name="address" id="" cols="30" rows="10"></textarea> <br>
+        
+        </fieldset>
+
+
+        <label for="">Interests</label><br>    
+        <label for="php">PHP</label>
+        <input type="checkbox" name="php" id="php" value="php">    
+        <label for="html">HTML</label>
+        <input type="checkbox" name="html" id="html" value="html">    
+        <label for="js">JS</label>
+        <input type="checkbox"name="js" id="js" value="js" checked="checked"><br>
+
+        <label for="">Marital Status</label> <br>
+        <label for="single">Single</label>
+        <input type="radio" name="mstatus"id="single" value="single">
+        <label for="married">Married</label>
+        <input type="radio" name="mstatus"id="married" value="married"checked="checked">
+        <label for="divorced">divorced</label>
+        <input type="radio" name="mstatus"id="divorced" value="divorced"><br>
+
+        
+        <label for="">Education Level</label> <br>
+        <select name="educaion" id=""multiple="multiple">
+              <option value="1">Diploma</option>
+              <option value="2" selected="selected">Degree</option>
+              <option value="3">Master Degree</option>
+        </select><br>
+
+        <label for="age">Age</label> <br>
+        <input type="number" name="age" id="age" min="16" max="60"> <br>
+         <label for="height">Height</label> <br>
+         <input type="number" name="height" id="height"min="4.5" step="0.1" max="6.7"> <br>
+        <label for="salary">Salary Range</label> <br>
+        <input type="range" name="salary"id="salary" min="0"max="10"step="0.1">10 <br>
+
+         <label for="photo">Upload Photo</label> <br>
+         <input type="file"name="photo"id="photo"> <br>
+         <label for="dob">Date of Birth</label> <br>
+         <input type="date" name="dob" id="dob"> <br>
+         <input type="submit" value="Register">
+         <input type="reset" value="Clear">
+
+    </form>
+    
+</body>
+</html>
